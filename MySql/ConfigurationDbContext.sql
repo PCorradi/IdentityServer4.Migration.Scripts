@@ -162,9 +162,9 @@ FROM `IdentityProperties`;
 
 -- ApiScopes -> ApiResourceScopes
 INSERT INTO `ApiResourceScopes` 
- (`Scope`, `ApiResourceId`)
+ (`Id`, `Scope`, `ApiResourceId`)
 SELECT 
- `Name`, `ApiResourceId`
+ `Id`, `Name`, `ApiResourceId`
 FROM `ApiScopes`;
 
 
